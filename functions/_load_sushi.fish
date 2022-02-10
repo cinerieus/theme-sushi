@@ -15,6 +15,10 @@ function cyan
     set_color -o 2aa198
 end
 
+function magenta
+    set_color -o 994df0
+end
+
 function white
     set_color -o fdf6e3
 end
