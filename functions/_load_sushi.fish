@@ -24,7 +24,8 @@ function white
 end
 
 function dim
-    set_color -o 4f4f4f
+    #set_color -o 4f4f4f
+    set_color -o 6e6e6e
 end
 
 function off
