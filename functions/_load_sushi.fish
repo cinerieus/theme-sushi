@@ -64,7 +64,6 @@ function git::is_stashed
 end
 
 # Kubernetes
-
 function k8s::current_context
     command kubectl config current-context
 end
@@ -74,7 +73,6 @@ function k8s::current_namespace
 end
 
 # Terraform
-
 # Test whether this is a terraform directory by finding .tf files
 function terraform::directory
 	command find . -name '*.tf' >/dev/null 2>&1 -maxdepth 0
