@@ -7,7 +7,7 @@ function fish_prompt
 	if test -n "$SSH_CLIENT"
 		set -l host (hostname -s)
 		set -l who (whoami)
-		echo -n -s (red)"("(cyan)"$who"(red)":"(cyan)"$host"(red)") "(off)
+		echo -n -s (magenta)"("(cyan)"$who"(magenta)":"(cyan)"$host"(magenta)") "(off)
 	end
 
 	if git::is_repo
@@ -18,7 +18,7 @@ function fish_prompt
 			echo -n -s (white)"^"(off)
 		end
 
-		echo -n -s (red)"("(off)
+		echo -n -s (magenta)"("(off)
 
 		if git::is_dirty
 			printf (white)"*"(off)
@@ -51,11 +51,11 @@ function fish_prompt
 			end
 		end
 
-		echo -n -s (red)") "(off)
+		echo -n -s (magenta)") "(off)
 	end
 
 	if test "$code" = 0
-		echo -n -s (red)"$symbol"(off)
+		echo -n -s (magenta)"$symbol"(off)
 	else
 		echo -n -s (dim)"$symbol"(off)
 	end
