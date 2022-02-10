@@ -12,7 +12,7 @@ function red
 end
 
 function cyan
-    set_color -o 2aa198
+    set_color -o 44a7ab
 end
 
 function magenta
