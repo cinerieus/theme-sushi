@@ -19,6 +19,10 @@ function magenta
     set_color -o 994df0
 end
 
+function blue
+    set_color -o 4043f5
+end
+
 function white
     set_color -o fdf6e3
 end
