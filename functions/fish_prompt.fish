@@ -7,7 +7,7 @@ function fish_prompt
 	if test -n "$SSH_CLIENT"
 		set -l host (hostname -s)
 		set -l who (whoami)
-		echo -n -s (magenta)"("(cyan)"$who"(magenta)"@"(cyan)"$host"(magenta)") "(off)
+		echo -n -s (magenta)"["(cyan)"$who"(magenta)"@"(cyan)"$host"(magenta)"] "(off)
 	end
 
 	if git::is_repo
