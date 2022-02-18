@@ -5,7 +5,7 @@ function fish_prompt
 	set -l code $status
 
 	if test -n "$SSH_CLIENT"
-		set -l host (hostname -s)
+		set -l host (echo $hostname)
 		set -l who (whoami)
 		echo -n -s (magenta)"["(cyan)"$who"(magenta)"@"(cyan)"$host"(magenta)"] "(off)
 	end
