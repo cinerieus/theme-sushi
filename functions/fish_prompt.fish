@@ -3,12 +3,9 @@ _load_sushi
 function fish_prompt
 	set -l symbol "λ "
 	set -l code $status
-
-	if test -n "$SSH_CLIENT"
-		set -l host (echo $hostname)
-		set -l who (whoami)
-		echo -n -s (magenta)"["(cyan)"$who"(magenta)"@"(cyan)"$host"(magenta)"] "(off)
-	end
+	set -l host (echo $hostname)
+	set -l who (whoami)
+	echo -n -s (magenta)"["(cyan)"$who"(magenta)"@"(cyan)"$host"(magenta)"] "(off)
 
 	if git::is_repo
 		set -l branch (git::branch_name 2>/dev/null)
